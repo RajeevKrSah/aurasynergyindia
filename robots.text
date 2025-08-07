@@ -1,0 +1,14 @@
+User-Agent: *
+Disallow: 
+Allow: /projects.html
+Allow: /Open-Cell_System.html
+Allow: /Mineral_Fiber_Ceiling.html
+Allow: /Linear_System.html
+Allow: /Lay-In_System.html
+Allow: /index.html
+Allow: /contact.html
+Allow: /Clip-In_System.html
+Allow: /clients.html
+Allow: /aboutus.html
+
+Sitemap: http://gridsquareceilings.com/sitemap.xml
