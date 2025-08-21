@@ -404,6 +404,9 @@ li p {
     -o-transition:all 200ms linear;
     -ms-transition:all 200ms linear;
     transition:all 200ms linear;
+    max-height: 210px;
+    width: 100%;
+    object-fit: cover;
 }
 
 .item-img-wrap:hover img{
@@ -1342,4 +1345,21 @@ span.headTitle{
 }
 .float-right{
    padding-left: 10%;
+}
+
+.project-items-container {
+    background:rgba(0, 0, 0, 0.03);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+}
+
+.project-items-container > div {
+    flex-basis: 31%; 
+    margin: 10px;
+}
+.project-items-container > div img {
+    max-height: 210px;
+    width: 100%;
+    object-fit: cover;
 }

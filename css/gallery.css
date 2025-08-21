@@ -7,12 +7,14 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.95);
+    background-color: rgba(255, 255, 255, 1);
     z-index: 1000;
     opacity: 0;
     transition: opacity 0.3s ease;
     align-items: center;
     justify-content: center;
+    overflow-y: auto;
+    padding: 10px 0;
 }
 
 .gallery-modal.show {
@@ -24,7 +26,8 @@
 .gallery-image.loading {
     position: relative;
     min-height: 200px;
-    background: #2a2a2a;
+    background: #f5f5f5;
+    border-radius: 4px;
 }
 
 .gallery-image.loading::after {
@@ -35,9 +38,9 @@
     width: 40px;
     height: 40px;
     margin: -20px 0 0 -20px;
-    border: 4px solid rgba(255, 255, 255, 0.2);
+    border: 4px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
-    border-top-color: #fff;
+    border-top-color: #333;
     animation: spin 1s ease-in-out infinite;
 }
 
@@ -62,7 +65,7 @@
     margin: auto;
     text-align: center;
     width: 100%;
-    padding: 20px;
+    padding: 10px;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -135,42 +138,42 @@
 }
 
 .gallery-caption {
-    color: #fff;
+    color: #222;
     text-align: center;
     padding: 18px 0 10px;
-    font-size: 1.3em;
-    font-weight: 500;
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    font-size: 1.2em;
+    font-weight: 400;
     margin-top: 10px;
+    letter-spacing: 0.5px;
 }
 
 .close-gallery {
     position: absolute;
-    top: 15px;
-    right: 25px;
-    color: #fff;
-    font-size: 40px;
-    font-weight: 300;
+    top: 20px;
+    right: 30px;
+    color: #888;
+    font-size: 24px;
     cursor: pointer;
     z-index: 10;
     transition: all 0.3s ease;
-    background: rgba(0, 0, 0, 0.5);
-    width: 50px;
-    height: 50px;
+    background: #f0f0f0;
+    width: 44px;
+    height: 44px;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     line-height: 1;
+    border: 1px solid #ddd;
 }
 
 .close-gallery:hover,
 .close-gallery:focus {
-    color: #fff;
-    background: rgba(255, 255, 255, 0.2);
-    transform: rotate(90deg);
-    outline: 2px solid #F02727;
-    outline-offset: 2px;
+    color: #000;
+    background: #fff;
+    transform: rotate(90deg) scale(1.1);
+    outline: none;
+    box-shadow: 0 0 0 2px #F02727;
 }
 
 .gallery-navigation {
@@ -190,24 +193,23 @@
     cursor: pointer;
     position: static;
     transform: none;
-    pointer-events: auto; 
+    pointer-events: auto;
     padding: 0;
     margin: 0;
-    color: white;
-    font-weight: 300;
-    font-size: 28px;
+    color: #555;
+    font-weight: 400;
+    font-size: 24px;
     transition: all 0.3s ease;
     user-select: none;
-    background-color: rgba(0, 0, 0, 0.7);
-    border: 2px solid rgba(255, 255, 255, 0.15);
+    background-color: #fff;
+    border: 1px solid #ddd;
     border-radius: 50%;
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
-    backdrop-filter: blur(5px);
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     z-index: 10;
     opacity: 0.8;
 }
@@ -216,12 +218,10 @@
 .gallery-next:hover,
 .gallery-prev:focus,
 .gallery-next:focus {
-    background-color: rgba(0, 0, 0, 0.9);
-    transform: scale(1.05);
+    color: #000;
     border-color: #F02727;
-    opacity: 1;
+    transform: scale(1.05);
     outline: none;
-    box-shadow: 0 0 0 2px #F02727, 0 4px 15px rgba(0, 0, 0, 0.3);
 }
 
 .gallery-prev:disabled,
@@ -346,9 +346,10 @@
 .thumbnail:hover,
 .thumbnail:focus,
 .thumbnail.active {
+    border: 2px solid #F02727;
     opacity: 1;
     transform: scale(1.05);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 10px rgba(240, 39, 39, 0.4);
     outline: none;
 }
 
