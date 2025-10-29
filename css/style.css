@@ -1355,11 +1355,18 @@ span.headTitle{
 }
 
 .project-items-container > div {
-    flex-basis: 31%; 
+    flex-basis: 45%; 
     margin: 10px;
 }
 .project-items-container > div img {
     max-height: 210px;
     width: 100%;
     object-fit: cover;
+}
+
+@media (min-width: 992px) {
+  .project-items-container > div {
+    flex-basis: 31%;
+    margin: 13px;
+  }
 }

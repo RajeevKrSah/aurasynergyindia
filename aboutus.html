@@ -87,28 +87,76 @@
     </div><!--top bar wrap end-->
     <!--navigation -->
 
-    <!--.navbar header-->
-    <div class="container">
-        <div class="nav d-flex-between">
-            <span class="headTitle "> "Leading Manufactures Of False Ceiling, Wall Paneling
-                And Modular OT System"</span>
-            <a class="navbar-brand float-right" href="#"><img src="img/certi03.png" alt="Certification"></a>
+    <!--.Top Bar-->
+    <style>
+        .top-bar-flex {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 4px 0;
+        }
 
+        @media (min-width: 992px) {
+            .top-bar-flex {
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                padding: 5px 0;
+            }
+        }
+    </style>
+    <div style="border-bottom: 1px solid #eee;">
+        <div class="container" style="padding-top: 8px; padding-bottom: 8px;">
+            <div class="top-bar-flex">
+                <span class="text-center"
+                    style="font-size: 14px; color: #ed1e24; font-weight: 600; line-height: 1.4; letter-spacing: 0.3px;">
+                    "Leading Manufacture of False Ceiling, Wall Paneling And Modular OT System"
+                </span>
+                <div style="margin-top: 8px;">
+                    <img src="img/certi03.png" alt="Certification" style="height: 48px; width: auto;">
+                </div>
+            </div>
         </div>
-    </div><!--/.nav-collapse --><!--/.nav-collapse -->
-    </div><!--.container-->
     </div>
+    <!--Top bar end-->
+
     <div class="navbar navbar-default navbar-static-top sticky" role="navigation">
         <div class="container">
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="index.html"><img src="img/logo1b1.jpg" height="60px"
-                    alt="GridSquare">&nbsp;&nbsp;<img src="img/logo1a2.png" height="60px"> </a>
+                <div class="visible-xs-block"
+                    style="display: flex; justify-content: space-between; align-items: center;">
+                    <a class="navbar-brand" href="index.html"
+                        style="display: flex; align-items: center; justify-content: center;">
+                        <img src="img/logo1b1.jpg" height="50px" alt="GridSquare">
+                        <div
+                            style="display: inline-block; width: 2px; height: 50px; background-color: black; margin: 0 10px;">
+                        </div>
+                        <img src="img/logo1a2a.png" height="50px" alt="Aura Synergy">
+                    </a>
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"
+                        style="margin-top: 15px;">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="visible-xs-block text-left" style="clear: both; display: flex; padding: 6px 10px;">
+                    <span style="color: #ed1e24; font-weight: 600; font-size: 18px; line-height: 1.2;">Aura
+                        Synergy India Pvt. Ltd.</span>
+                </div>
+                <div class="hidden-xs">
+                    <a class="navbar-brand" href="index.html"
+                        style="display: flex; align-items: center; justify-content: center;">
+                        <img src="img/logo1b1.jpg" height="60px" alt="GridSquare">
+                        <div
+                            style="display: inline-block; width: 2px; height: 60px; background-color: black; margin: 0 10px;">
+                        </div>
+                        <img src="img/logo1a2a.png" height="60px" alt="Aura Synergy">
+                        <span style="color: #ed1e24; font-weight: 800 ; font-size: 25px; margin-left: 15px;">Aura Synergy India Pvt.
+                            Ltd.</span>
+                    </a>
+                </div>
             </div><!--.navbar header-->
 
 
@@ -198,7 +246,7 @@
             </div>
         </div>
     </section><!--.bread-wrap-->
-    <div class="divide80"></div>
+    <div class="divide40"></div>
     <div class="container">
         <div class="row">
             <div class="col-md-12">
@@ -222,9 +270,8 @@
                 <p><a href="contact.html" class="btn btn-theme-bg">Contact Us</a></p>
                 <hr>
             </div>
-
         </div>
-        <div class="divide50"></div>
+        <div class="divide40"></div>
         <div class="row">
             <div class="col-md-12">
                 <h3 class="heading">Achieve New Heights of Excellence with us</h3>
@@ -301,7 +348,7 @@
         </div>
     </div>
 
-    <div class="divide80"></div>
+    <div class="divide50"></div>
     <div class="container">
         <div class="row">
             <div class="col-md-12">
@@ -349,10 +396,8 @@
                     <div class="footer-col">
                         <h3 class="heading">About us</h3>
                         <p>
-                            GridSquare<sup>&reg;</sup> False Ceiling and Wall Paneling are leading manufacturers of
-                            false metal celings.
-                            All GridSquare® False Ceiling and Wall Paneling are entirely Made in India. GridSquare®
-                            False Ceiling and Wall Paneling
+                            GridSquare<sup>&reg;</sup> metal ceilings are leading manufacturers of false metal celings.
+                            All GridSquare® metal ceilings are entirely Made in India. GridSquare® metal ceilings
                             provide a unique choice of surface and mechanical properties, with high level of
                             prefabrication and quality workmanship, which offers a significant reduction of on-site
                             handling and most importantly, a long product life-span thus ensuring valuable advantages
@@ -382,11 +427,6 @@
                             </ul>
                     </div>
                     </span>
-
-
-
-
-
                 </div><!--footer col-->
 
                 <!--footer col-->
@@ -395,11 +435,14 @@
                         <h3 class="heading">Contact</h3>
                         <div class=" footer-work">
                             <ul class="address-info list-unstyled">
+                                <li><i class="fa fa-home"></i> DSM 531-533, 5th Floor, DLF Towers, <br>Moti Nagar, New
+                                    Delhi 110015</li>
                                 <li>
-                                    <i class="fa fa-home"></i> DSM109, DLF TOWER,<br>Moti
-                                    Nagar, New Delhi-110015
+                                    <i class="fa fa-phone"></i>
+                                    <a href="tel:01141410003">011 – 41410003</a> ,
+                                    <a href="tel:+911143542123">+91 11 4354 2123</a>
                                 </li>
-                                <li><i class="fa fa-phone"></i> 011 – 41410003</li>
+
                                 <li><i class="fa fa-envelope"></i> <a
                                         href="mailto:sales@aurasynergyindia.com">sales@aurasynergyindia.com</a></li>
                                 <li><i class="fa fa-envelope"></i> <a
@@ -418,7 +461,7 @@
                 </div>
             </div>
         </div>
-    </footer><!--footer end-->
+    </footer>
     <!--scripts and plugins -->
     <!--must need plugin jquery-->
     <script src="js/jquery.min.js"></script>

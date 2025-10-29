@@ -3,7 +3,6 @@ document.addEventListener('DOMContentLoaded', function () {
     // Project images data - each project can have multiple images
     const projectsData = {
         'aspl-01': {
-            title: 'ASIPL 01',
             images: [
                 { src: 'img/ASIPL01A.jpeg', alt: '1200 Bedded Civil Hospital, Asarwa, Ahmedabad.' },
                 { src: 'img/ASIPL01B.jpg', alt: '1200 Bedded Civil Hospital, Asarwa, Ahmedabad.' },
@@ -13,7 +12,6 @@ document.addEventListener('DOMContentLoaded', function () {
             ]
         },
         'asipl-02': {
-            title: 'ASIPL 02',
             images: [
                 { src: 'img/ASIPL02.jpg', alt: 'Balak Ram Hospital, Timarpur, Delhi.' },
                 { src: 'img/ASIPL02B.jpg', alt: 'Balak Ram Hospital, Timarpur, Delhi.' },
@@ -23,28 +21,24 @@ document.addEventListener('DOMContentLoaded', function () {
             ]
         },
         'asipl-03': {
-            title: 'ASIPL 03',
             images: [
                 { src: 'img/ASIPL03A.jpg', alt: 'CGHS wellness centre, Chennai.' },
                 { src: 'img/ASIPL03B.jpg', alt: 'CGHS wellness centre, Chennai.' },
             ]
         },
         'asipl-04': {
-            title: 'ASIPL 04',
             images: [
                 { src: 'img/ASIPL04B.jpg', alt: 'Central University of Haryana, Mahendragarh.' },
                 { src: 'img/ASIPL04C.jpeg', alt: 'Central University of Haryana, Mahendragarh.' },
             ]
         },
         'asipl-05': {
-            title: 'ASIPL 05',
             images: [
                 { src: 'img/ASIPL05.jpg', alt: 'Darbhanga Medical College, Darbhanga Bihar.' },
                 { src: 'img/ASIPL05A.jpg', alt: 'Darbhanga Medical College, Darbhanga Bihar.' },
             ]
         },
         'asipl-06': {
-            title: 'ASIPL 06',
             images: [
                 { src: 'img/ASIPL06.jpg', alt: 'Enforcement Directorate Office Building, Delhi.' },
                 { src: 'img/ASIPL06A.jpg', alt: 'Enforcement Directorate Office Building, Delhi.' },
@@ -52,7 +46,6 @@ document.addEventListener('DOMContentLoaded', function () {
             ]
         },
         'asipl-07': {
-            title: 'ASIPL 07',
             images: [
                 { src: 'img/ASIPL07.jpg', alt: 'ESIC Hospital, Okhla.' },
                 { src: 'img/ASIPL07A.jpeg', alt: 'ESIC Hospital, Okhla.' },
@@ -60,7 +53,6 @@ document.addEventListener('DOMContentLoaded', function () {
             ]
         },
         'asipl-08': {
-            title: 'ASIPL 08',
             images: [
                 { src: 'img/ASIPL08.jpeg', alt: 'Fakir Mohan Medical College and Hospital, Balasore.' },
                 { src: 'img/ASIPL08A.jpg', alt: 'Fakir Mohan Medical College and Hospital, Balasore.' },
@@ -73,7 +65,6 @@ document.addEventListener('DOMContentLoaded', function () {
             ]
         },
         'asipl-09': {
-            title: 'ASIPL 09',
             images: [
                 { src: 'img/ASIPL09.jpg', alt: '1000 Bedded Hospital at GRMC Gwalior.' },
                 { src: 'img/ASIPL09A.jpg', alt: '1000 Bedded Hospital at GRMC Gwalior.' },
@@ -83,7 +74,6 @@ document.addEventListener('DOMContentLoaded', function () {
             ]
         },
         'asipl-10': {
-            title: 'ASIPL 10',
             images: [
                 { src: 'img/ASIPL10A.jpg', alt: 'IIT, Kanpur.' },
                 { src: 'img/ASIPL10B.jpg', alt: 'IIT, Kanpur.' },
@@ -91,7 +81,6 @@ document.addEventListener('DOMContentLoaded', function () {
             ]
         },
         'asipl-11': {
-            title: 'ASIPL 11',
             images: [
                 { src: 'img/ASIPL11.jpg', alt: 'IOCL Corporate Office, Delhi.' },
                 { src: 'img/ASIPL11A.jpg', alt: 'IOCL Corporate Office, Delhi.' },
@@ -102,7 +91,6 @@ document.addEventListener('DOMContentLoaded', function () {
             ]
         },
         'asipl-12': {
-            title: 'ASIPL 12',
             images: [
                 { src: 'img/ASIPL12.jpg', alt: 'Ispat Post Graduate Institute and Super Speciality Hospital, Rourkela.' },
                 { src: 'img/ASIPL12A.jpg', alt: 'Ispat Post Graduate Institute and Super Speciality Hospital, Rourkela.' },
@@ -111,14 +99,12 @@ document.addEventListener('DOMContentLoaded', function () {
             ]
         },
         'asipl-13': {
-            title: 'ASIPL 13',
             images: [
                 { src: 'img/ASIPL13.png', alt: 'LNJP Hospital, Delhi.' },
                 { src: 'img/ASIPL13A.webp', alt: 'LNJP Hospital, Delhi.' },
             ]
         },
         'asipl-14': {
-            title: 'ASIPL 14',
             images: [
                 { src: 'img/ASIPL14.jpg', alt: 'Luvas University, Hisar, Haryana.' },
                 { src: 'img/ASIPL14A.png', alt: 'Luvas University, Hisar, Haryana.' },
@@ -127,7 +113,6 @@ document.addEventListener('DOMContentLoaded', function () {
             ]
         },
         'asipl-15': {
-            title: 'ASIPL 15',
             images: [
                 { src: 'img/ASIPL15.jpg', alt: 'ESIC, Hyderabad.' },
                 { src: 'img/ASIPL15A.jpg', alt: 'ESIC, Hyderabad.' },
@@ -135,7 +120,6 @@ document.addEventListener('DOMContentLoaded', function () {
             ]
         },
         'asipl-16': {
-            title: 'ASIPL 16',
             images: [
                 { src: 'img/ASIPL16.jpg', alt: 'HPCL Rajasthan Refinery Limited, Barmer, Raj.' },
                 { src: 'img/ASIPL16A.png', alt: 'HPCL Rajasthan Refinery Limited, Barmer, Raj.' },
@@ -143,7 +127,6 @@ document.addEventListener('DOMContentLoaded', function () {
             ]
         },
         'asipl-17': {
-            title: 'ASIPL 17',
             images: [
                 { src: 'img/ASIPL17.JPG', alt: 'PWD Delhi (Schools).' },
                 { src: 'img/ASIPL17A.JPG', alt: 'PWD Delhi (Schools).' },
@@ -153,7 +136,6 @@ document.addEventListener('DOMContentLoaded', function () {
             ]
         },
         'asipl-18': {
-            title: 'ASIPL 18',
             images: [
                 { src: 'img/ASIPL18.jpg', alt: 'DTTDC, Delhi.' },
                 { src: 'img/ASIPL18A.jpg', alt: 'DTTDC, Delhi.' },
@@ -161,7 +143,6 @@ document.addEventListener('DOMContentLoaded', function () {
             ]
         },
         'asipl-19': {
-            title: 'ASIPL 19',
             images: [
                 { src: 'img/ASIPL19.jpg', alt: 'IIT Jodhpur.' },
                 { src: 'img/ASIPL19A.jpg', alt: 'IIT Jodhpur.' },
@@ -175,7 +156,6 @@ document.addEventListener('DOMContentLoaded', function () {
             ]
         },
         'asipl-20': {
-            title: 'ASIPL 20',
             images: [
                 { src: 'img/ASIPL20.jpeg', alt: 'Dr. Kalam Agricultural College, Kishanganj.' },
                 { src: 'img/ASIPL20A.png', alt: 'Dr. Kalam Agricultural College, Kishanganj.' },
@@ -183,7 +163,6 @@ document.addEventListener('DOMContentLoaded', function () {
             ]
         },
         'asipl-21': {
-            title: 'ASIPL 21',
             images: [
                 { src: 'img/ASIPL21.jpg', alt: 'Jharkhand Vidhan Sabha.' },
                 { src: 'img/ASIPL21A.jpg', alt: 'Jharkhand Vidhan Sabha.' },
@@ -192,14 +171,12 @@ document.addEventListener('DOMContentLoaded', function () {
             ]
         },
         'asipl-22': {
-            title: 'ASIPL 22',
             images: [
                 { src: 'img/ASIPL22.jpg', alt: 'NAARM, Hyderabad.' },
                 { src: 'img/ASIPL22A.jpeg', alt: 'NAARM, Hyderabad.' },
             ]
         },
         'asipl-23': {
-            title: 'ASIPL 23',
             images: [
                 { src: 'img/work-6a.jpg', alt: 'National Housing Bank.' },
                 { src: 'img/ASIPL23A.JPG', alt: 'National Housing Bank.' },
@@ -286,7 +263,7 @@ document.addEventListener('DOMContentLoaded', function () {
         if (!currentProject) return;
 
         showLoading();
-        const { title, images } = currentProject;
+        const { images } = currentProject;
         const currentImage = images[currentSlide];
 
         // Preload adjacent images for better performance
@@ -298,7 +275,7 @@ document.addEventListener('DOMContentLoaded', function () {
             galleryImage.src = currentImage.src;
             galleryImage.alt = currentImage.alt;
             galleryImage.classList.remove('loading');
-            galleryCaption.textContent = `${title} - ${currentImage.alt}`;
+            galleryCaption.textContent = `${currentImage.alt}`;
             galleryImage.setAttribute('aria-live', 'polite');
             galleryImage.setAttribute('aria-label', currentImage.alt);
         };
